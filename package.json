@@ -2,10 +2,17 @@
   "name": "jobs_calc",
   "version": "1.0.0",
   "description": "Freelance calculator",
-  "main": "index.js",
+  "main": "src/server.js",
   "author": "Bruno Gonçalves Pereira <bruno.g.p897@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ."
+  },
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
