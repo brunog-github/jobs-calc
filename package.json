@@ -1,0 +1,11 @@
+{
+  "name": "jobs_calc",
+  "version": "1.0.0",
+  "description": "Freelance calculator",
+  "main": "index.js",
+  "author": "Bruno Gonçalves Pereira <bruno.g.p897@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
