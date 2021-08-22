@@ -5,7 +5,7 @@ const Profile = require('../model/Profile')
 module.exports = {
     async index(req,res){
     
-    const jobs = Job.get()
+    const jobs = await Job.get()
     const profile = await Profile.get()
 
     let statusCount = {
@@ -33,7 +33,7 @@ module.exports = {
                 budget: JobUtils.calculateBudget(job, profile['value-hour'])
             }
         })
-        
+
         const freeHours = profile['hours-per-day'] - jobTotalHours
 
         return res.render("index", { jobs: updateJobs, profile: profile, statusCount: statusCount, freeHours: freeHours })
